@@ -1,1 +1,5 @@
-init
+local env config: -Xms256m -Xmx512m -server.port=8080
+
+Docker instruments:
+docker build -t homework-app .
+docker run -p 8080:8080 homework-app
